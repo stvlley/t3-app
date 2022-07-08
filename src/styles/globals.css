@@ -143,3 +143,22 @@ body {
         display: none;
     }
 }
+
+/* New Note Modal */
+#new-note-modal {
+    background-color: #797d78;
+    max-width: 700px;
+}
+#input-area {
+    width: 700px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #c6c6c6;
+    justify-content: center;
+    align-items: center;
+   outline: none;
+}
+#top-of-modal {
+    display: flex;
+    justify-content: space-between;
+}
