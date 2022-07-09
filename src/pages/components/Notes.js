@@ -25,7 +25,8 @@ const Notes = () => {
                       opacity: '90%',
                       backgroundColor: '#34d8eb',
                       borderRadius: '20px',
-                      maxHeight: 350
+                      maxHeight: 350,
+                      maxWidth: 835
                     },
                     content: {
                       position: 'absolute',
