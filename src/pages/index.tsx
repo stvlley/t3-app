@@ -8,7 +8,7 @@ import Image from "next/image";
 import {RiKeyboardFill } from 'react-icons/ri'
 import {CgNotes} from 'react-icons/cg'
 import {BiSearch, BiMapAlt} from 'react-icons/bi'
-
+import { signIn } from "next-auth/react";
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -31,8 +31,8 @@ const Home: NextPage = () => {
             <BiSearch id="search-icon"/>
           </div>
           <div id="action-icons">
-            <div id="action-icon-one"></div>
-            <div id="action-icon-two"></div>
+            <div className="cursor-pointer hover:scale-105  duration-500" id="action-icon-one"></div>
+            <div className="cursor-pointer hover:scale-105  duration-500 " id="action-icon-two" onClick={() => signIn()}></div>
           </div>
         </section>
         <h1 id="welcome-title">Welcome, Batman.</h1>
